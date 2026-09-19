@@ -1,0 +1,3 @@
+interface:
+  display_name: "Integration Testing"
+  short_description: "Test behavior across components and service boundaries"
