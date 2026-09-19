@@ -1,0 +1,3 @@
+interface:
+  display_name: "Feature Testing"
+  short_description: "Business-driven UI quality control for features"
