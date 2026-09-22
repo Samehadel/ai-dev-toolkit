@@ -88,6 +88,22 @@ Safe MCP examples, documentation, and setup helpers. Never commit access tokens,
 
 Starter configuration for different project types, such as Spring Boot, Angular, or Python projects. Templates can include repository-level `AGENTS.md`, project agents, and project-scoped skills.
 
+The initial [workspace instructions](templates/workspace/AGENTS.md),
+[project source map](templates/workspace/project-context.md), and
+[architecture README](templates/workspace/architecture/README.md) support a workspace
+with separate `architecture/` and `app/` Git repositories. The application repository
+contains both `backend/` and `frontend/`; architecture documentation has matching
+backend and frontend sections.
+
+Copy the instruction template to `<project-name>/AGENTS.md`, the source map to
+`<project-name>/project-context.md`, and the architecture
+README to `<project-name>/architecture/README.md`, preserving any existing content.
+Replace project-specific placeholders before use. Start the agent from the workspace
+folder and explicitly reference its instructions when working from a narrower checkout.
+The workspace-level instruction file is outside both repositories; version-control its
+canonical copy in the architecture repository if needed and link it into the workspace.
+These are ordinary Markdown templates; no installer or source-map generator is included yet.
+
 ### `scripts/`
 
 Bootstrap and maintenance scripts, including installation, validation, and environment checks. Scripts should be idempotent where practical and must preserve existing user files by backing them up before replacement.
