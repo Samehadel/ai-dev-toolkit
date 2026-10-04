@@ -39,6 +39,8 @@ Once the technical plan is ready and the story branch is prepared, transition th
 
 Implement the story in accordance with `AGENTS.md`, architecture boundaries, naming, dependency rules, and established project patterns. Keep changes scoped to the story. If a new ambiguity requires a material design decision, investigate project evidence and ask only when it remains unresolved.
 
+When the story requires UI implementation, aim for a beautiful, organized, professional result that feels native to the current app. Inspect comparable screens and follow the app's existing UI/UX conventions, reusing its components, design tokens, typography, colors, spacing, and interaction patterns. Use clear visual hierarchy, consistent alignment, thoughtful grouping, and balanced whitespace. Preserve usability, accessibility, and responsive behavior, and handle relevant loading, empty, error, and success states consistently with the app. Keep visual improvements within the story's scope. Review the rendered UI at relevant viewport sizes and refine any awkward layout or visual inconsistencies before completion; report any inability to perform that visual review.
+
 Run the relevant validation and required project checks. Add or update tests where needed to demonstrate changed behavior and acceptance criteria. Review the final diff against the story and architectural requirements. Fix failures introduced by the change, and report any unrelated failures or unavailable checks accurately. Do not treat incomplete implementation or blocked required checks as completion; resolve them or obtain an explicit exception before the completion commit and push.
 
 ## Commit and push
