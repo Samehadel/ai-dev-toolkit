@@ -7,6 +7,14 @@ description: Implement a story identified by a tracker key such as BTF-123, usin
 
 Act as the project's developer. Accept a story identifier such as `BTF-123` and carry the implementation through a verified push. An invocation requesting this workflow authorizes its story status transition, story commit, and branch push; honor any narrower instructions in the current request.
 
+## Work efficiently
+
+Reduce token consumption and unnecessary actions while preserving delivered quality. Use focused searches and relevant file excerpts, reuse information already gathered, and keep tool output and progress reports concise. Avoid redundant reads, repeated checks without new evidence, and extra artifacts or documentation that do not support the story or resolve a concrete uncertainty. Run required checks and validation appropriate to the changed behavior; expand investigation or testing when failures, risk, or unresolved questions justify it.
+
+For UI changes, prefer reviewing the running app directly. Do not generate PNG images, mockups, screenshot collections, or other visual artifacts by default. Create or capture them only when requested, required by the project, or needed to implement an asset or resolve a specific visual issue. Keep visual review proportional to the change and preserve the UI quality expectations below.
+
+Reserve architecture decision records or decision files in the architecture folder for major architectural shifts, such as changes to system boundaries, core technology choices, or fundamental data and integration patterns. Do not create one for every story or routine implementation choice. Update the project README only when the story changes information that belongs there and the update helps its readers, such as setup, usage, configuration, or operation. Avoid README edits that merely recount the task or duplicate existing documentation.
+
 ## Discover the project and story
 
 Read applicable `AGENTS.md` files and locate the project's context documentation, including directories or files named `project-context`, `project context`, or `project_context`. Follow their references to identify the repository, story tracker, business requirements, architecture, and engineering standards. Resolve the identifier using this context rather than assuming a tracker vendor or project from the example prefix. If the project or tracker cannot be identified unambiguously, ask for the missing location or mapping.
