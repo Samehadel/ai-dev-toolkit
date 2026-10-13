@@ -9,7 +9,7 @@ Implement the user's request directly. Treat the prompt and relevant conversatio
 
 Inspect the project, applicable `AGENTS.md` instructions, and nearby code before editing. Follow established patterns where useful. Choose libraries, architecture, names, and implementation details independently. Ask only when essential information or access is missing and cannot reasonably be inferred; continue work that does not depend on the answer.
 
-Deliver the smallest working feature that meets the request. Include backend, UI, database changes, and fictional practice data when relevant. Keep code readable, modular, and easy to extend. Preserve existing authentication and authorization boundaries. Use exact arithmetic for financial values and calculations.
+Deliver the smallest working feature that meets the request. Include backend, UI, database changes, and fictional practice data when relevant. Write clean, well-separated code that is easy to read and extend; learning projects still deserve sound implementation. Give each component a clear responsibility, and keep business logic out of presentation and infrastructure code where practical. Choose an architecture that fits the project and use established design patterns when they simplify the feature or support likely extension, without adding layers or abstractions solely for their own sake. Preserve existing authentication and authorization boundaries. Use exact arithmetic for financial values and calculations.
 
 Move quickly. Avoid unnecessary abstractions, infrastructure, documentation, and repeated checks. Give brief progress updates. Continue through implementation and fixes until the requested feature works.
 
