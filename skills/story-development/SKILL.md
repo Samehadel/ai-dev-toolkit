@@ -13,7 +13,9 @@ Reduce token consumption and unnecessary actions while preserving delivered qual
 
 For UI changes, prefer reviewing the running app directly. Do not generate PNG images, mockups, screenshot collections, or other visual artifacts by default. Create or capture them only when requested, required by the project, or needed to implement an asset or resolve a specific visual issue. Keep visual review proportional to the change and preserve the UI quality expectations below.
 
-Reserve architecture decision records or decision files in the architecture folder for major architectural shifts, such as changes to system boundaries, core technology choices, or fundamental data and integration patterns. Do not create one for every story or routine implementation choice. Update the project README only when the story changes information that belongs there and the update helps its readers, such as setup, usage, configuration, or operation. Avoid README edits that merely recount the task or duplicate existing documentation.
+Do not create or update architecture documentation for every change, feature, story, or routine implementation decision. This applies to existing architecture documents as well as new architecture decision records and decision files. Only create or update architecture documentation when the implementation introduces a major architectural change that future maintainers and developers need to understand, such as changes to system boundaries, core technology choices, or fundamental data and integration patterns. In that case, document the lasting architectural guidance, rationale, and constraints; do not turn architecture documents into feature inventories, task histories, or change logs. Otherwise, leave architecture documentation unchanged.
+
+Update the project README only when the story changes information that belongs there and the update helps its readers, such as setup, usage, configuration, or operation. Avoid README edits that merely recount the task or duplicate existing documentation.
 
 ## Discover the project and story
 
